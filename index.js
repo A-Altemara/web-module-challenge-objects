@@ -106,10 +106,12 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+function addReview(anArray, human, rank, opinion){
+  const newRate = {name: human, rating: rank, feedback: opinion};
+  anArray.push(newRate);
+  return anArray;
 }
-
+console.log(addReview(reviews,'Billy', 2, 'Lame food!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
